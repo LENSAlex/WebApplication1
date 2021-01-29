@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="text-center">
+    <div class="row">
+        <div class="col-md-12">
+            <form method="post">
+                <label>Nom</label>
+                <input type="text" placeholder="Nom" class="form-control" name="nom" required />
+                <label>Prenom</label>
+                <input type="text" placeholder="Prenom" class="form-control" name="prenom" required />
+                <label>Mot de passe</label>
+                <input type="password" placeholder="Mot de passe" class="form-control" name="mdp" required />
+                <label>Confirmation mot de passe</label>
+                <input type="password" placeholder="Confirmer mdp" class="form-control" name="mdp_conf" required />
+                <br />
+                <input type="submit" value="Inscription" class="btn btn-primary" name="inscription" asp-page-handler="Inscription" />
+                <br />
+                <label class="col-form-label" style="color: red;">@Model.DisplayErreur</label>
+
+
+            </form>
+        </div>
+    </div>
+</div>

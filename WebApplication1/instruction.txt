@@ -1,0 +1,6 @@
+1. Remplacer le startup.cs
+2. Remplacer le appsetting.json
+3. Mettre le fichier Config.cs dans votre bibliothèque de classe
+4. Installer la lib Mysql via NuGet (sur le projet, la bibliothèque de classe, et sur les tests)
+5. Pour utiliser la base de donnée et faire des requetes les examples sont dans utiliasteursmanager et utilisateur.cs
+6. Pour un exemple d'insertion dans la base de donnée via un formulaire c'est index.cs
